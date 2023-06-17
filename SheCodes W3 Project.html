@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenka's Final Project</title>
+    <style>
+      body {
+        background: linear-gradient(
+          178deg,
+          rgba(201, 234, 252, 0.51) 14.9%,
+          rgba(160, 199, 255, 0.73) 80%
+        );
+        display: block;
+        text-align: center;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        margin: 10px 350px 10px 350px;
+      }
+
+      h2 {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        margin: 10px 400px 10px 400px;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        line-height: 2;
+        margin: 0px 220px 20px 220px;
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      .bottomImage {
+        margin: 0px 10px 0px 10px;
+      }
+
+      img {
+        border: 2px solid grey;
+        border-style: outset;
+        display: inline-flex;
+      }
+
+      button {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+        padding: 10px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+        margin: 5px 500px 5px 500px;
+      }
+
+      button:hover {
+        background-color: rgb(125, 157, 204);
+        color: aliceblue;
+        cursor: pointer;
+      }
+
+      a {
+        color: black;
+      }
+
+      hr {
+        border-width: 2px;
+        border-style: outset;
+        margin: 25px 0px 35px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <h1>Adršpach - a village that is called a city</h1>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/834/original/IMG_20220212_103142_1_.jpg?1647957325"
+      width="700"
+      height="500"
+      alt="View from Adršpach castle ruins"
+    />
+    <h2>Sandstone rock formations in the heart of Europe</h2>
+    <p>
+      Adršpach is a village inhabited by approximately 500 people, yet some call
+      it a city - more precisely the city of rocks <em>(skalní město)</em>. This
+      small village shares with nearby town Teplice nad Metují the largest rock
+      labyrinth in the Czech Republic. The Adršpach-Teplice Rocks
+      <em>(Adršpašsko-teplické skály)</em> are visited by thousands of tourists
+      every year. First tourists appeared in Adršpach during the 18th century
+      and famous German author Johann Wolfgang Goethe was among them (visited in
+      1790). <br />
+      <br />
+      Adršpach is also a place widely used by filmmakers, mainly for fairy-tales
+      and fantasy films and TV series (i.e. <span>The Third Prince</span>, The
+      Prince and The Evening Star, Hell with Princess,
+      <span>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</span
+      >, The Musketeers, <span>Carnival Row</span>), music videos, climbing and
+      nature documentaries or various commercial advertisements.
+    </p>
+
+    <div class="bottomImage">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/840/original/IMG_20220212_110645_1_.jpg?1647958021"
+        width="380"
+        height="500"
+        alt="Rock formation near Adršpach castle ruins"
+      />
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/830/original/IMG_20201226_120239_1.jpg?1647956995"
+        width="600"
+        height="500"
+        alt="Way of the Cross"
+      />
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/832/original/IMG_20210415_104426_1_.jpg?1647957210"
+        width="380"
+        height="500"
+        alt="Gothic Gate"
+      />
+    </div>
+
+    <div class="learn">
+      <a
+        href="https://en.wikipedia.org/wiki/Adr%C5%A1pach-Teplice_Rocks"
+        target="_blank"
+      >
+        <button>Learn more</button></a
+      >
+    </div>
+
+    <div class="getThere">
+      <a href="https://goo.gl/maps/E4HCrhQ5Vf8Gmcvd8" target="_blank">
+        <button>How to get there?</button></a
+      >
+    </div>
+
+    <div class="buttonNews">
+      <button>Send me some news!</button>
+    </div>
+
+    <hr />
+    <div>
+      <p>
+        Coded by
+        <a
+          href="https://www.linkedin.com/in/lenka-junov%C3%A1-570b8413a"
+          target="_blank"
+          ><strong>Lenka Junová</strong></a
+        >
+        🌲🌲🌲 as a final project of
+        <a href="https://www.shecodes.io/workshops" target="_blank"
+          >SheCodes Basics workshop</a
+        >
+        💪
+      </p>
+    </div>
+
+    <script>
+      function newsletter() {
+        let news = prompt("What is your e-mail address?");
+        let country = prompt("What country are you from?");
+        news = news.toLowerCase();
+        news = news.trim();
+        country = country.toLowerCase();
+
+        if (
+          country === "spain" ||
+          country === "argentina" ||
+          country === "colombia" ||
+          country === "mexico" ||
+          country === "venezuela" ||
+          country === "cuba" ||
+          country === "peru"
+        ) {
+          alert("Holla! Gracias por suscribirse a nuestro boletín.");
+        } else {
+          if (country === "france" || country === "belgium") {
+            alert("Salut! Merci de vous inscrire à notre newsletter.");
+          } else {
+            if (country === "germany" || country === "austria") {
+              alert(
+                "Hallo! Danke, dass Sie sich für unseren Newsletter angemeldet haben."
+              );
+            } else {
+              if (country === "brazil" || country === "portugal") {
+                alert("Olá! Obrigado por subscrever a nossa newsletter.");
+              } else {
+                alert("Hi! Thank you for subscribing to our newsletter.");
+              }
+            }
+          }
+        }
+      }
+
+      let buttonNews = document.querySelector(".buttonNews");
+      buttonNews.addEventListener("click", newsletter);
+    </script>
+  </body>
+</html>
